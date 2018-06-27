@@ -1,0 +1,26 @@
+p{
+	font-size: 28px;
+}
+nav{
+	display:inline;
+	padding:20px;
+	height: 20px;
+	margin-top: 0px;
+	background-color: pink;
+}
+li{
+	display: inline;
+	padding: 20px;
+}
+a:link{
+	font-family:"Verdana", cursive;
+	font-size: 16pt;
+	font-style: bold;
+	text-decoration:underline;
+	color: #5E68F2;
+}
+a:hover{
+	font-size: 18pt;
+	color: #737CFA;
+	text-decoration: underline;
+}

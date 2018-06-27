@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Manage Users</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	
+	<?php  include 'insert.php'; 
+		   include 'seeUsers.php'; ?>
+	
+</head>
+<body>
+
+<p> Welcome Super_User to 'manage other users'.</p>
+	<nav>
+		<li> <a href="Uprofile.php">Update Profile</a> </li> 
+		<li> <a href="UManage.html">Manage Other Users</a> </li> 
+		<li> <a href="index.php">Logout</a> </li> <br><br><br>
+	</nav>
+	
+<form name="php1" action="insert.php" enctype="multipart/form-data" style="background-color: pink;" method="post">
+	<fieldset>
+		<legend> Add a new user </legend>
+	User ID:
+	<input type="text" name="userId" required><br><br>
+	Full Name:
+	<input type="text" name="name" required><br><br>
+	Email:
+	<input type="text" name="email" required><br><br>
+	Phone Number:
+	<input type="text" name="number" required><br><br>
+	User Name:
+	<input type="text" name="uName" required><br><br>
+	Password:
+	<input type="password" name="uPass required"><br><br>
+	User Type:
+	<input type="text" name="uType" required><br><br>
+	Address:
+	<input type="text" name="address" required><br><br>
+    Image:
+    <input type="file" name="image" id="fileToUpload"><br><br>
+    <input type="submit" value="Submit" name="submit">
+	<input type="submit" value="Update" name="update">
+</form>
+	</fieldset><br><hr>
+
+<p> See a list of all users <a href="seeUsers.php">Here</a></p> <hr>
+
+<p>Delete a Student from here.</p>
+<form name="php1" action="delete.php" style="background-color: pink;" method="post">
+	User ID:
+	<input type="text" name="Id"><br><br>
+<input type="submit" name="Delete">
+
+
+</script>
+</body>
+</html>
